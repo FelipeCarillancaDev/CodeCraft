@@ -80,7 +80,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Clonar Repositorio') {
             steps {
                 git branch: 'main', url: 'https://github.com/FelipeCarillancaDev/CodeCraft.git'
             }
