@@ -25,5 +25,11 @@ pipeline {
                 bat 'docker build -t my-api-tasks .'
             }
         }
+
+        stage('Ejecutar Contenedor') {
+            steps {
+                bat 'docker run -d -p 3000:3000 --name my-api-container my-api-tasks'
+            }
+        }
     }
 }
