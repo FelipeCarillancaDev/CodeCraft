@@ -10,19 +10,19 @@ pipeline {
 
         stage('Instalar Dependencias') {
             steps {
-                bat 'npm install'
+                sh 'npm install'
             }
         }
 
         stage('Ejecutar Pruebas') {
             steps {
-                bat 'npm test'
+                sh 'npm test'
             }
         }
 
         stage('Construir Imagen Docker') {
             steps {
-                bat 'docker build -t my-api-tasks .'
+                sh 'docker build -t my-api-tasks .'
             }
         }
     }
