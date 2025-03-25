@@ -1,4 +1,4 @@
-# Informe de ejecución del pipeline
+# Informe de ejecución del pipeline Proyecto CodeCraft
 
 ## Resumen
 
@@ -10,22 +10,24 @@ para el proyecto de API de tareas.
 1. **Creación del Repositorio**
 
     - Se inicializa el repositorio en GitHub. y se suben los archivos del proyecto.
-
+    - https://github.com/FelipeCarillancaDev/CodeCraft
 
 2. **Integración con Docker**
 
-    - Created a Dockerfile to containerize the application.
+    - Se creó un Dockerfile para contener la aplicación.
 
-
-3. **Jenkins Configuration**
+3. **Configuración de Jenkins**
 
     - Se configura Jenkins para automatizar el proceso de compilación, prueba e implementación.
-
+   - ![jenkins.jpg](images/jenkins.jpg)
+   
 ## Errores encontrador
-
-- \[Optional section for issues\]
+- Se encontro un error al ejecutar el pipeline en Jenkins. Debido a estar usando S.O Windows. hay que configurar el archivo
+  Jenkinsfile usando bat en lugar de sh.
+- ![jenkins(3).jpg](images/jenkins%283%29.jpg)
 
 ## Resultados
-
-- \[Add screenshots or logs of successful pipeline runs\]
-
+   
+- Resultados de la ejecución del pipeline
+   - ![jenkins  (1).jpg](images/jenkins%20%20%281%29.jpg)
+   - ![jenkins  (2).jpg](images/jenkins%20%20%282%29.jpg)
