@@ -1,19 +1,7 @@
 const request = require('supertest');
 const app = require('../app');
-const http = require('http');
 
 describe('Tasks API', () => {
-    let server;
-
-    beforeAll(() => {
-        server = http.createServer(app);
-        server.listen(3000);
-    });
-
-    afterAll(() => {
-        server.close();
-    });
-
     it('should return all tasks', async () => {
         const response = await request(app).get('/tasks');
         expect(response.status).toBe(200);
